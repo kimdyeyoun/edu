@@ -8,7 +8,7 @@ public class IfTest4 {
         //과장이면 "500만원"
         //부장, 과장이 아니면 "300만원"
 
-        if (position.equals("부장"))
+        if (position.equals("부장"))//선호
         {
             System.out.println("700만원");
         }else if (position.equals("과장")){
