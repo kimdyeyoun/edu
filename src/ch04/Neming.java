@@ -4,6 +4,9 @@ public class Neming {
     public static void main(String[] args){
         //bus, car, taxi
 
+        //상수
+        //BUS_CAR_TEXI
+
         //파스칼 케이스 기법(모든 단어의 첫 글자는 대문자)
         //클래스명
         //BusCarTaxi
