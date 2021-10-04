@@ -1,8 +1,8 @@
 package ch05;
 
 public class MethodExample {
-    public static void main(String[] args) {
-        sum(10, 20);//메소드를 호출한다.
+    public static void main(String[] args) {//선언부
+        sum(10, 20);//메소드를 호출한다.(구현부)
         sum(50, 100);
         minus(50,20);
         minus(40,100);
