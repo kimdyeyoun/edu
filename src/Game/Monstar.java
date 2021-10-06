@@ -19,7 +19,7 @@ public class Monstar extends Maple {
         switch (num) {
             case 1:
                 System.out.printf("\t\t%s\t\n", areas[0]);
-                System.out.print("몬스터 선택 : 1.초록달팽이 2. 파란달팽이 3. 빨간달팽이 : ");
+                System.out.print("몬스터 선택 : 1.초록달팽이 2.파란달팽이 3.빨간달팽이 : ");
                 int monster = sc.nextInt();
                 if (monster == 1) {
                     System.out.println("초록달팽이가 소환 되어 있습니다 체력(10)");
@@ -71,7 +71,7 @@ public class Monstar extends Maple {
                         }
 
                     }
-                }else if (monster == 3) {
+                } else if (monster == 3) {
                     System.out.println("빨간달팽이가 소환 되어 있습니다 체력(45)");
                     int hp = 45;
                     if (hp != 0) {
@@ -97,12 +97,91 @@ public class Monstar extends Maple {
                     }
                 }
 
+
             case 2:
-                System.out.println("개발전 지역입니다.");
+                System.out.printf("\t\t%s\t\n", areas[1]);
+                System.out.print("몬스터 선택 : 1.스텀프 2.다크스텀프 3.엑스스텀프 : ");
+                int monster1 = sc.nextInt();
+                if (monster1 == 1) {
+                    System.out.println("스텀프가 소환 되어 있습니다 체력(50)");
+                    int hp = 50;
+                    if (hp != 0) {
+                        for (; hp > 0; ) {
+                            System.out.print("A키를 눌러 공격해주세요!!(입력: A) : ");
+                            String numA = sc.next();
+                            if (numA.equals("A") || numA.equals("a")) {
+                                hp = hp - damage1(damage);
+                                System.out.printf("스텀프 데미지 -%d : \n", damage);
+
+                            }
+                        }
+                        System.out.println("스텀프 처치!");
+                        int i = 100;
+                        int j = (int) (Math.random() * 41);
+                        System.out.printf("\t아이템 획득 확률공개\t \n성공확률 %d%% 나의 확률 %d%% : ", 80, i - j);
+                        if (80 < (i - j)) {
+                            it = "장작";
+                            System.out.println(it + "획득!");
+                        } else {
+                            System.out.println("메소 10드랍");
+                        }
+
+                    }
+                } else if (monster1 == 2) {
+                    System.out.println("다크스텀프가 소환 되어 있습니다 체력(68)");
+                    int hp = 68;
+                    if (hp != 0) {
+                        for (; hp > 0; ) {
+                            System.out.print("A키를 눌러 공격해주세요!!(입력: A) : ");
+                            String numA = sc.next();
+                            if (numA.equals("A") || numA.equals("a")) {
+                                hp = hp - damage1(damage);
+                                System.out.printf("다크스텀프 데미지 -%d : \n", damage);
+
+                            }
+                        }
+                        System.out.println("다크스텀프 처치!");
+                        int i = 100;
+                        int j = (int) (Math.random() * 61);
+                        System.out.printf("\t아이템 획득 확률공개\t \n성공확률 %d%% 나의 확률 %d%% : ", 70, i - j);
+                        if (70 < (i - j)) {
+                            it = "마른 장작";
+                            System.out.println(it + "획득!");
+                        } else {
+                            System.out.println("메소 15드랍");
+                        }
+
+                    }
+                } else if (monster1 == 3) {
+                    System.out.println("엑스스텀프가 소환 되어 있습니다 체력(75)");
+                    int hp = 75;
+                    if (hp != 0) {
+                        for (; hp > 0; ) {
+                            System.out.print("A키를 눌러 공격해주세요!!(입력: A) : ");
+                            String numA = sc.next();
+                            if (numA.equals("A") || numA.equals("a")) {
+                                hp = hp - damage1(damage);
+                                System.out.printf("엑스스텀프 데미지 -%d : \n", damage);
+
+                            }
+                        }
+                        System.out.println("엑스스텀프 처치!");
+                        int i = 100;
+                        int j = (int) (Math.random() * 81);
+                        System.out.printf("\t아이템 획득 확률공개\t \n성공확률 %d%% 나의 확률 %d%% : ", 60, i - j);
+                        if (60 < (i - j)) {
+                            it = "도끼팬장작";
+                            System.out.println(it + "획득!");
+                        } else {
+                            System.out.println("메소 5드랍");
+                        }
+                    }
+                }
                 break;
             case 3:
                 System.out.println("개발전 지역입니다.");
                 break;
+
         }
         return n1;
     }
