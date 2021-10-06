@@ -9,6 +9,9 @@ public class CarTest3 {
         Car car2 = new Car("현대","그랜저");
         System.out.println("car2.brand : " + car2.brand);
         System.out.println("car2.nm : " + car2.nm);
+
+        car2 = car;
+        System.out.println("car2.nm : " + car2.nm);
     }
 
 }
