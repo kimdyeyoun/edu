@@ -1,6 +1,7 @@
 package blackjack;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class CardTest {
@@ -11,7 +12,7 @@ public class CardTest {
         Card c3 = new Card("스페이드", "3");
 
         //ArrayList
-        List<Card> cards = new ArrayList();
+        List<Card> cards = new LinkedList();//상속관계
         cards.add(c1);
         cards.add(new Card("스페이드", "2"));
 
