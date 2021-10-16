@@ -3,10 +3,12 @@ import java.util.*;
 
 public class P01 {
     public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int b = sc.nextInt();
+        for (int i=1;i<=9;i++){
+            for (int j=2;j<=9;j++){
+                System.out.printf("%d*%d=%d\t",j,i,i*j);
+            }
+            System.out.printf("\n");
+        }
 
-        System.out.println(a-b);
     }
 }
